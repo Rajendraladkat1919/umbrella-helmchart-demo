@@ -1,12 +1,12 @@
 dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 12.7.7
+  version: 12.10.1
 - name: ghost
   repository: https://charts.bitnami.com/bitnami
   version: 17.0.6
 - name: cert-manager
   repository: https://charts.bitnami.com/bitnami
   version: 0.4.17
-digest: sha256:9ccf034f8f17a4f885b912da728898967d2de2532f13cad8d9991408f0d41204
-generated: "2022-05-18T18:55:07.044619+05:30"
+digest: sha256:b0be722bef4d147bd33e1a43c399a9272c5b8c9d358670e9551fc5fd6db21ea2
+generated: "2022-05-18T19:33:37.107601+05:30"

@@ -67,7 +67,7 @@ pipeline {
         container('helm-pod') {
 
         echo "Deploying on minikube."
-        sh 'helm upgrade --install my-book ./*.tgz'
+        sh 'helm upgrade --install nextgen ./*.tgz'
         }
       }
     }
