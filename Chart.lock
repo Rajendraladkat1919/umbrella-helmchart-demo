@@ -5,11 +5,11 @@ dependencies:
 - name: ghost
   repository: https://charts.bitnami.com/bitnami
   version: 17.0.6
-- name: consul
+- name: mongodb
   repository: https://charts.bitnami.com/bitnami
-  version: 10.4.0
-- name: kibana
+  version: 12.1.5
+- name: cert-manager
   repository: https://charts.bitnami.com/bitnami
-  version: 10.0.6
-digest: sha256:dbfa0aee0d83f7412b4bf60dae30544eaf85dbfab637200234a320d3b4b31545
-generated: "2022-05-18T16:27:04.349534+05:30"
+  version: 0.4.17
+digest: sha256:e2cf284a60862c4fe55f86e3bddf98b949f6a243e6cedc8f984efec2862237da
+generated: "2022-05-18T18:47:59.55378+05:30"
