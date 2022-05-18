@@ -92,9 +92,5 @@ redis:
   configmap: |-
 
     appendonly no
-ghost:
-  image:
-    registry: docker.io
-    repository: bitnami/ghost
-    tag: 4.47.0-debian-10-r0
+
 
