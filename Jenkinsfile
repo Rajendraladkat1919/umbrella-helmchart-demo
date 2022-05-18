@@ -18,8 +18,6 @@ pipeline {
     stage('Helm Dependancy Update..') {
       steps {
         container('helm-pod') {
-          withCredentials([gitUsernamePassword(credentialsId: 'gitcredentials',
-                 gitToolName: 'git-tool')]) 
           git url: 'https://github.com/rladkat/deployment-poc.git', branch: 'main'
           sh '''
             helm dependency update
