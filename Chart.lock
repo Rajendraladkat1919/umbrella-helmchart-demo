@@ -5,8 +5,5 @@ dependencies:
 - name: ghost
   repository: https://charts.bitnami.com/bitnami
   version: 17.0.6
-- name: cert-manager
-  repository: https://charts.bitnami.com/bitnami
-  version: 0.4.17
-digest: sha256:b0be722bef4d147bd33e1a43c399a9272c5b8c9d358670e9551fc5fd6db21ea2
-generated: "2022-05-18T19:33:37.107601+05:30"
+digest: sha256:aceb5beb74bbeb72e16c138299115c5b8103a7b1bc49b11233c382b1baaacb1b
+generated: "2022-05-18T21:54:40.335532+05:30"

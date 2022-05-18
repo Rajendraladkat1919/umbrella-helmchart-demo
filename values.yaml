@@ -6,12 +6,12 @@ replicaCount: 1
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: true
+  create: false
   # Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: "jenkins"
 
 image:
   repository: gcr.io/google-samples/gb-frontend
@@ -96,10 +96,5 @@ ghost:
   image:
     registry: docker.io
     repository: bitnami/ghost
-    tag: 4.47.0-debian-10-r0 
+    tag: 4.47.0-debian-10-r0
 
-cert-manager:
-  image:
-      registry: docker.io
-      repository: bitnami/acmesolver
-      tag: 1.8.0-debian-10-r40
