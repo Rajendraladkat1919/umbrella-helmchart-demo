@@ -25,6 +25,7 @@ dependencies:
   - name: redis
     version: ^12.3.x
     repository: https://charts.bitnami.com/bitnami
+  
   - name: ghost
     version: 17.0.6
     repository: https://charts.bitnami.com/bitnami
