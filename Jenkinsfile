@@ -68,7 +68,7 @@ pipeline {
 
         echo "Deploying on minikube."
         sh '''
-          helm upgrade --install nextgen ./*.tgz -n jenkins
+          helm upgrade --install my-book ./*.tgz -n jenkins
          '''
         }
       }
