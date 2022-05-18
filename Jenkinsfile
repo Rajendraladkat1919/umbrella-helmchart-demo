@@ -18,7 +18,7 @@ pipeline {
     stage('Helm Dependancy Update..') {
       steps {
         container('helm-pod') {
-          git url: 'https://github.com/rladkat/deployment-poc.git', branch: 'main'
+          git url: 'https://github.com/rladkat/helm-deployment-poc.git', branch: 'main'
           sh '''
             helm dependency update
             if [ $? -eq 0 ]; then
