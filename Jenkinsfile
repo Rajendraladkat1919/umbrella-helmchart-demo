@@ -68,13 +68,7 @@ pipeline {
 
         echo "Deploying on minikube."
         sh '''
-          export GHOST_PASSWORD=$(kubectl get secret --namespace "jenkins" nextgen-ghost -o jsonpath="{.data.ghost-password}" | base64 --decode && \
-          export MARIADB_ROOT_PASSWORD=$(kubectl get secret --namespace "jenkins" nextgen-mariadb -o jsonpath="{.data.mariadb-root-password}" | base64 --decode) &&\
-          export MARIADB_PASSWORD=$(kubectl get secret --namespace "jenkins" nextgen-mariadb -o jsonpath="{.data.mariadb-password}" | base64 --decode)
-
-          
-          helm upgrade --install nextgen ./*.tgz --set ghostPassword=$GHOST_PASSWORD --set mariadb.auth.rootPassword=$MARIADB_ROOT_PASSWORD --set mariadb.auth.password=$MARIADB_PASSWORD
-
+          helm upgrade --install nextgen ./*.tgz -n jenkins
          '''
         }
       }
