@@ -5,11 +5,8 @@ dependencies:
 - name: ghost
   repository: https://charts.bitnami.com/bitnami
   version: 17.0.6
-- name: mongodb
-  repository: https://charts.bitnami.com/bitnami
-  version: 12.1.5
 - name: cert-manager
   repository: https://charts.bitnami.com/bitnami
   version: 0.4.17
-digest: sha256:e2cf284a60862c4fe55f86e3bddf98b949f6a243e6cedc8f984efec2862237da
-generated: "2022-05-18T18:47:59.55378+05:30"
+digest: sha256:9ccf034f8f17a4f885b912da728898967d2de2532f13cad8d9991408f0d41204
+generated: "2022-05-18T18:55:07.044619+05:30"
