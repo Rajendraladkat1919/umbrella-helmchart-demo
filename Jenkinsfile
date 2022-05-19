@@ -67,9 +67,10 @@ pipeline {
         container('helm-pod') {
 
         echo "Deploying on minikube."
-        sh '''
-          helm upgrade --install my-gb ./*.tgz -n poc
-         '''
+        /*sh '''
+          helm upgrade --install my-gb ./*.tgz -n jenkins
+         '''*/
+
         }
       }
     }
