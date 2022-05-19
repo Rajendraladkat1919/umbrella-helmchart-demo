@@ -76,10 +76,13 @@ pipeline {
         }
       }
     }
+    
     stage('List Helm Deployment') {
-      withKubeConfig([credentialsId: 'kubeconfig', serverUrl: 'https://192.168.64.3:8443']) {
-            sh 'helm ls -A'
+      steps {
+            withKubeConfig([credentialsId: 'xxx', serverUrl: 'xxx']) {
+            sh 'helm ls'
           }
+      }
     }
 
     stage('Microservices manifest') {
