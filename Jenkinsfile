@@ -105,6 +105,5 @@ pipeline {
         echo "Version bump happning here."
         }
       }
-    }
   }
 }
