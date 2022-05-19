@@ -20,6 +20,7 @@ pipeline {
         container('helm-pod') {
           git url: 'https://github.com/rladkat/helm-deployment-poc.git', branch: 'main'
           sh '''
+            helm repo update
             helm dependency update
             if [ $? -eq 0 ]; then
                 echo "dependency update successfully completed."
