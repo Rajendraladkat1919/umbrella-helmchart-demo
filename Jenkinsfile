@@ -79,9 +79,8 @@ pipeline {
     
     stage('List Helm Deployment') {
       steps {
-            //withKubeConfig([credentialsId: 'kubeconfig', serverUrl: 'https://192.168.64.3:8443']) {
+            withKubeConfig([credentialsId: 'kubeconfig', serverUrl: 'https://192.168.64.3:8443']) {
             sh 'helm ls -A'
-            
           }
       }
     }
@@ -99,14 +98,13 @@ pipeline {
         }
       }
     }
-    stage('Bump the helm chart version') 
+    /*stage('Bump the helm chart version') 
     {
       steps{
-        echo "Version bump happning here."
+        container('codefresh/cfstep-helm') {
+          sh 'echo `${yq .version guestbook/Chart.yaml}`'
         }
       }
-    }
-  }
-  
+    }*/
   }
 }
