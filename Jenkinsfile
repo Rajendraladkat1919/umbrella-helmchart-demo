@@ -99,5 +99,12 @@ pipeline {
         }
       }
     }
- }  
+    stage('Bump the helm chart version') 
+    {
+      steps{
+        echo "Version bump happning here."
+        }
+      }
+    }
+  }
 }
