@@ -78,9 +78,8 @@ pipeline {
     }
     stage('List Helm Deployment') {
       steps {
-            withKubeConfig([credentialsId: 'kubeconfig', serverUrl: 'https://192.168.64.3:8443']) {
+            
             sh 'helm ls -A'
-          }
       }
     }
 
